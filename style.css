@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    border: 1px solid #1875E8;
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    background-image: url("img/Ruido.png");
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.container h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+#lang-toggle {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    border-radius: 16px;
+    background: #fff;
+    color: #1875E8;
+    padding: 10px 18px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    transition: background 0.3s;
+}
+
+#voice-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 16px;
+    background: #fff;
+    color: #1875E8;
+    padding: 10px 18px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    transition: background 0.3s;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(80px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: #1875E8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    position: relative;
+    font-size: 3rem;
+}
+
+.card-text {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card.flipped .card-text {
+    display: block;
+}
+
+.card.matched {
+    background-color: #4CAF50;
+    pointer-events: none;
+}
+
+.iniciar {
+    border-radius: 16px;
+    background: #1875E8;
+    padding: 16px 24px;
+    font-size: 24px;
+    font-weight: 700;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #1354A5;
+}
+
+.status {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        height: 100%;
+    }
+
+    .card {
+        height: 80px;
+        font-size: 2rem;
+    }
+
+    .container h1 {
+        margin-top: 20px;
+        font-size: 2rem;
+    }
+    .status{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 30px;
+    }
+    
+}
