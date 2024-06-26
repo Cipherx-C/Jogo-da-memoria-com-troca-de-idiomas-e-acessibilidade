@@ -17,7 +17,9 @@ Um jogo simples de memória desenvolvido em HTML, CSS e JavaScript, onde você p
 
 ## Capturas de Tela
 
-![Screenshot](screenshot.png)
+![Captura de Tela (66)](https://github.com/Cipherx-C/Jogo-da-memoria-com-troca-de-idiomas-e-acessibilidade/assets/124820588/10cad5e9-1d87-4f0c-afa0-7e4ac1b12f31)
+
+![Captura de Tela (67)](https://github.com/Cipherx-C/Jogo-da-memoria-com-troca-de-idiomas-e-acessibilidade/assets/124820588/eecde0a7-36cd-4fd3-a5e6-fffa34e4e731)
 
 ## Tecnologias Utilizadas
 
